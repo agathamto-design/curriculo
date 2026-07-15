@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fac8f3, #ffffff);
+    color: #000;
+    padding: 40px;
+}
+
+
+/* Container Principal */
+
+main{
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,.15);
+}
+
+/* Cabeçalho */
+
+.header{
+    background: linear-gradient(135deg, #de78cf, #b959b0);
+    color: white;
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.header h1{
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.header h2{
+    margin-top: 8px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* Foto */
+
+.header img{
+    width: 200px;       
+    height: 200px;        
+    object-fit: cover;    
+    border-radius: 50%;   
+    border: 6px solid white;
+    margin-top: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+
+/* Seções */
+
+section{
+    padding: 35px 45px;
+    border-bottom: 1px solid #ececec;
+}
+
+section:last-child{
+    border-bottom: none;
+}
+
+section h2{
+    color: #de78cf;
+    font-size: 25px;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+section h2::after{
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #de78cf;
+    display: block;
+    margin-top: 8px;
+    border-radius: 20px;
+}
+
+/* Texto */
+
+p{
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Listas */
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    background: #fac8f3;
+    margin-bottom: 12px;
+    padding: 14px 18px;
+    border-left: 6px solid #de78cf;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+ul li:hover{
+    transform: translateX(8px);
+    background: #f8b6ec;
+}
+
+/* Informações pessoais */
+
+.pessoal li strong{
+    color: #000;
+}
+
+/* Habilidades */
+
+.habilidades ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+    gap: 15px;
+}
+
+.habilidades li{
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Objetivo */
+
+.objetivo{
+    background: #fff8fe;
+}
+
+/* Formação */
+
+.formacao{
+    background: #ffffff;
+}
+
+/* Footer */
+
+footer{
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 15px;
+}
+
+/* Responsividade */
+
+@media (max-width:768px){
+
+    body{
+        padding: 15px;
+    }
+
+    section{
+        padding: 25px;
+    }
+
+    .header{
+        padding: 30px 20px;
+    }
+
+    .header h1{
+        font-size: 30px;
+    }
+
+    .header h2{
+        font-size: 19px;
+    }
+
+    /* Foto responsiva redonda */
+    .header img{
+        width: 150px;
+        height: 150px;    
+    }
+
+    .habilidades ul{
+        grid-template-columns: 1fr;
+    }
+}
