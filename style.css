@@ -8,9 +8,8 @@ body{
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #fac8f3, #ffffff);
     color: #000;
-    padding: 40px;
+    padding: 30px;
 }
-
 
 /* Container Principal */
 
@@ -18,9 +17,9 @@ main{
     max-width: 1000px;
     margin: auto;
     background: #fff;
-    border-radius: 20px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0,0,0,.15);
+    box-shadow: 0 20px 30px rgba(0,0,0,.15);
 }
 
 /* Cabeçalho */
@@ -28,8 +27,9 @@ main{
 .header{
     background: linear-gradient(135deg, #de78cf, #b959b0);
     color: white;
+    border-radius: 25px;
     text-align: center;
-    padding: 40px 30px;
+    padding: 15x 30px;
 }
 
 .header h1{
@@ -43,6 +43,7 @@ main{
     font-size: 22px;
     font-weight: 400;
 }
+
 
 /* Foto */
 
@@ -111,7 +112,38 @@ ul li:hover{
     transform: translateX(8px);
     background: #f8b6ec;
 }
+/* Menu de atalhos */
+.atalho ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 20px 0;
+}
 
+.atalho li{
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.atalho li:hover{
+    transform: none;
+    background: transparent;
+}
+
+.atalho a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.atalho a:hover{
+    color: #fac8f3;
+    text-decoration: underline;
+}
 /* Informações pessoais */
 
 .pessoal li strong{
