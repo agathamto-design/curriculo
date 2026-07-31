@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Agatha Monteiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <nav class="menu-fixo">
+        <ul> 
+            <li><a href="#">Início</a></li>
+            <li><a href="#objetivo">Objetivo</a></li>
+            <li><a href="#habilidades">Habilidades</a></li> 
+            <li><a href="#sobre-mim">Sobre mim</a></li>
+            <li><a href="#formacao">Formação acadêmica</a></li>
+            <li><a href="#avaliacao">Avaliar site</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1>Agatha Monteiro leite</h1>
+        <h2></h2>
+
+        <img src="foto.jpg" alt="Foto de Agatha Monteiro" width="200" height="250">
+
+        <div class="print-actions">
+            <button type="button" id="print-pdf-btn" class="btn-print">Baixar PDF</button>
+            <button type="button" id="theme-toggle-btn" class="btn-theme" aria-pressed="false">
+                <span class="theme-icon" aria-hidden="true">🌙</span>
+            </button>
+        </div>
+
+       
+         <section class="atalho">
+            <ul>
+                <li><a href="https://github.com/agathamto-design" target="_blank" rel="noreferrer">🐈‍⬛ Github</a></li>
+                <li><a href="https://www.linkedin.com/in/agatha-monteiro-leite-758673406/" target="_blank" rel="noreferrer">🚀 LinkedIn</a></li>
+            </ul>
+        </section>
+    </header>
+
+    <main>
+
+
+        <section class="pessoal">
+            <h2>Informações Pessoais</h2>
+
+            <ul>
+                <li><strong>Nome:</strong> Agatha Monteiro Leite</li>
+                <li><strong>Telefone:</strong> (21) 981754922</li>
+                <li><strong>E-mail:</strong> agathamtoleite@gmail.com</li>
+                <li><strong>Cidade:</strong> Nova iguaçu - Rj</li>
+            </ul>
+        </section>
+        <section id="objetivo" class="Objetivo">
+            <h2>Objetivo</h2>
+            <p>
+                Busco uma oportunidade como Estagiária para
+                desenvolver minhas habilidades profissionais, adquirir experiência
+                e contribuir com dedicação para a empresa.
+            </p>
+        </section>
+
+        <section id="formacao" class="Formacao acadêmica">
+            <h2>Formação Acadêmica</h2>
+            <p>Ensino Médio - Concluído</p>
+            <p>Ensino superior em engenharia de software - Em andamento</p>
+            <p>Curso programador full-stack - Em andamento</p>
+        </section>
+
+        <section id="sobre-mim" class="Sobre mim">
+                 <h2>Sobre mim</h2>
+                 <p> Jovem dedicada, responsável e proativa, com facilidade de aprendizado e interesse em crescer profissionalmente. Possuo boa comunicação, organização e comprometimento, buscando uma oportunidade para desenvolver minhas habilidades e adquirir experiência no mercado de trabalho.</p>
+
+        </section>
+ 
+        <section class="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Trabalho em equipe</li>
+                <li>Comunicativa</li>
+                <li>Proatividade</li>
+                <li>Adaptabilidade</li>
+                <li>Comprometimento</li>
+                <li>Pontualidade</li>
+            </ul>
+        </section>     
+
+        <section id="avaliacao" class="avaliacao-site">
+            <h2>Avaliar o Site</h2>
+            <p>Deixe sua nota e envie uma mensagem rápida para meu WhatsApp.</p>
+
+            <form id="avaliacao-form" class="avaliacao-form">
+                <div class="campo-formulario">
+                    <label for="avaliacao-nome">Seu nome</label>
+                    <input type="text" id="avaliacao-nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="avaliacao-nota">Nota do site</label>
+                    <select id="avaliacao-nota" name="nota" required>
+                        <option value="">Selecione uma nota</option>
+                        <option value="5">5 - Excelente</option>
+                        <option value="4">4 - Muito bom</option>
+                        <option value="3">3 - Bom</option>
+                        <option value="2">2 - Pode melhorar</option>
+                        <option value="1">1 - Precisa melhorar</option>
+                    </select>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="avaliacao-mensagem">Mensagem</label>
+                    <textarea id="avaliacao-mensagem" name="mensagem" rows="5" placeholder="Escreva o que achou do site" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-avaliacao">Enviar no WhatsApp</button>
+            </form>
+        </section>
+
+        <footer class="final">
+            <p>2026&copy; Criado por: Agatha monteiro leite</p>
+            <button type="button" id="game-toggle-btn" class="btn-game">Jogar uma partida rápida</button>
+        </footer>
+
+        <div class="chat-widget" aria-label="Atendente Virtual">
+            <button type="button" class="chat-launcher" aria-expanded="false" aria-controls="chat-panel">
+                <span class="chat-launcher-icon" aria-hidden="true">💬</span>
+                <span>Atendente Virtual</span>
+            </button>
+
+            <div class="chat-panel" id="chat-panel" hidden>
+                <div class="chat-header">
+                    <div>
+                        <strong>Atendente Virtual</strong>
+                        <p>Respostas rápidas sobre o currículo</p>
+                    </div>
+                    <button type="button" class="chat-close" aria-label="Fechar chat">×</button>
+                </div>
+
+                <div class="chat-body" aria-live="polite"></div>
+
+                <div class="chat-quick-actions">
+                    <button type="button" class="chat-question" data-answer="objetivo">Qual é o seu objetivo profissional?</button>
+                    <button type="button" class="chat-question" data-answer="horario">Quais são seus horários para estágio?</button>
+                    <button type="button" class="chat-question" data-answer="localizacao">Onde você mora/estuda?</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-widget" id="game-widget" hidden>
+            <div class="game-header">
+                <div>
+                    <strong>Jogo da Velha</strong>
+                    <p>Você é a pessoa usuária e joga com X.</p>
+                </div>
+                <button type="button" class="game-close" aria-label="Fechar jogo">×</button>
+            </div>
+
+            <div class="game-status" aria-live="polite">Clique em uma casa para começar.</div>
+            <div class="game-board" aria-label="Tabuleiro do jogo da velha">
+                <button type="button" class="game-cell" data-index="0" aria-label="Casa 1"></button>
+                <button type="button" class="game-cell" data-index="1" aria-label="Casa 2"></button>
+                <button type="button" class="game-cell" data-index="2" aria-label="Casa 3"></button>
+                <button type="button" class="game-cell" data-index="3" aria-label="Casa 4"></button>
+                <button type="button" class="game-cell" data-index="4" aria-label="Casa 5"></button>
+                <button type="button" class="game-cell" data-index="5" aria-label="Casa 6"></button>
+                <button type="button" class="game-cell" data-index="6" aria-label="Casa 7"></button>
+                <button type="button" class="game-cell" data-index="7" aria-label="Casa 8"></button>
+                <button type="button" class="game-cell" data-index="8" aria-label="Casa 9"></button>
+            </div>
+
+            <div class="game-actions">
+                <button type="button" class="game-restart">Reiniciar partida</button>
+            </div>
+        </div>
+
+        <!-- Bibliotecas e Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
