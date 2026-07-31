@@ -840,7 +840,7 @@ body.dark-mode .chat-question:hover {
 @media (max-width: 768px) {
     .chat-widget {
         right: 14px;
-        bottom: 14px;
+        bottom: 108px;
         left: 14px;
         align-items: stretch;
     }
@@ -966,6 +966,10 @@ body.dark-mode .chat-question:hover {
         right: 12px;
         bottom: 112px;
         width: auto;
+    }
+
+    .final {
+        padding-bottom: 96px;
     }
 }
 
