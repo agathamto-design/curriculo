@@ -301,7 +301,14 @@ ul li:hover{
     transform: translateX(8px);
     background: #f8b6ec;
 }
-
+/* Menu de atalhos */
+.atalho ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 20px 0;
+}
 body.dark-mode ul li:hover {
     background: #2a3350;
 }
@@ -313,7 +320,6 @@ body.dark-mode ul li:hover {
     list-style: none;
     padding: 20px 0;
 }
-
 .atalho li{
     background: transparent;
     border: none;
