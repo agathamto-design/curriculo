@@ -9,6 +9,7 @@ body{
     color: #000;
     padding: 30px;
     padding-top: 90px; 
+    min-height: 100vh;
 }
 
 body.dark-mode {
@@ -20,7 +21,7 @@ body.dark-mode {
        background: linear-gradient(135deg, #b959b0, #fac8f3);
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 15x 30px;
+    padding: 15px 30px;
 }
 
 body.dark-mode .final {
@@ -859,32 +860,153 @@ body.dark-mode .chat-question:hover {
 @media (max-width:768px){
 
     body{
-        padding: 15px;
+        padding: 12px;
+        padding-top: 84px;
+    }
+
+    .menu-fixo ul {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 10px 12px;
+        gap: 10px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .menu-fixo ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .menu-fixo a {
+        white-space: nowrap;
+        font-size: 14px;
+        padding: 8px 14px;
     }
 
     section{
-        padding: 25px;
+        padding: 22px 18px;
     }
 
     .header{
-        padding: 30px 20px;
+        padding: 24px 16px 12px;
     }
 
     .header h1{
-        font-size: 30px;
+        font-size: 28px;
+        letter-spacing: 1px;
     }
 
     .header h2{
-        font-size: 19px;
+        font-size: 18px;
     }
 
     /* Foto responsiva redonda */
     .header img{
-        width: 150px;
-        height: 150px;    
+        width: 140px;
+        height: 140px;    
+    }
+
+    .print-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-print,
+    .btn-theme,
+    .btn-avaliacao,
+    .btn-game {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .atalho ul {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 0 4px;
+    }
+
+    .atalho a {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    .avaliacao-form {
+        max-width: 100%;
+    }
+
+    .btn-avaliacao {
+        justify-self: stretch;
     }
 
     .habilidades ul{
         grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 16px 12px;
+    }
+
+    .chat-widget {
+        right: 12px;
+        left: 12px;
+        bottom: 16px;
+    }
+
+    .game-widget {
+        left: 12px;
+        right: 12px;
+        bottom: 112px;
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        padding-top: 76px;
+    }
+
+    .menu-fixo a {
+        font-size: 13px;
+        padding: 7px 12px;
+    }
+
+    .header {
+        padding: 20px 12px 10px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header img {
+        width: 128px;
+        height: 128px;
+    }
+
+    section {
+        padding: 18px 14px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    .game-widget {
+        bottom: 104px;
+    }
+
+    .chat-launcher {
+        width: 100%;
+        justify-content: center;
     }
 }

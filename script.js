@@ -11,8 +11,16 @@ function aplicarTema(temaEscuro) {
 
     if (themeToggleBtn) {
         themeToggleBtn.setAttribute("aria-pressed", temaEscuro ? "true" : "false");
-        themeToggleBtn.querySelector(".theme-text").textContent = temaEscuro ? "Modo claro" : "Modo escuro";
-        themeToggleBtn.querySelector(".theme-icon").textContent = temaEscuro ? "☀️" : "🌙";
+        const themeText = themeToggleBtn.querySelector(".theme-text");
+        const themeIcon = themeToggleBtn.querySelector(".theme-icon");
+
+        if (themeText) {
+            themeText.textContent = temaEscuro ? "Modo claro" : "Modo escuro";
+        }
+
+        if (themeIcon) {
+            themeIcon.textContent = temaEscuro ? "☀️" : "🌙";
+        }
     }
 
     localStorage.setItem("tema-curriculo", temaEscuro ? "dark" : "light");
